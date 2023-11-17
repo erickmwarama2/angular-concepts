@@ -1,0 +1,11 @@
+<p>
+    Say {{ childMessage }}
+</p>
+<p>
+    <button (click)="sendMessage()">Send Message</button>
+</p>
+<h2> Hello from child!</h2>
+<hr/>
+<ng-content select="[question]"></ng-content>
+<ng-content select="[answer]"></ng-content>
+<hr/>

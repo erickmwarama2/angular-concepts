@@ -1,0 +1,7 @@
+<app-child (messageEvent)="receiveMessage($event)" [childMessage]="'Hello from parent component'">
+    <p answer> This message is passed from the parent component via ng-content </p>
+    <h3 question> Is this the question ? </h3>
+</app-child>
+<p>
+    {{ childMessage }}
+</p>

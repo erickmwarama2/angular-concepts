@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tutorial';
+  showText = false;
+  todaysDate = new Date();
+  itemImageUrl = "../assets/benta-scaled.jpg";
+
+  toggleText(): void {
+    this.showText = !this.showText;
+  }
 }
